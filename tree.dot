@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+DecisionTree: uid=DecisionTreeClassifier_210cf58a700f, depth=5, numNodes=19, numClasses=2, numFeatures=95
+  If (feature 18 in {1.0})
+   If (feature 80 in {0.0})
+    If (feature 11 in {0.0})
+     If (feature 28 in {1.0})
+      Predict: 0.0
+     Else (feature 28 not in {1.0})
+      If (feature 46 in {0.0})
+       Predict: 0.0
+      Else (feature 46 not in {0.0})
+       Predict: 1.0
+    Else (feature 11 not in {0.0})
+     Predict: 1.0
+   Else (feature 80 not in {0.0})
+    Predict: 1.0
+  Else (feature 18 not in {1.0})
+   If (feature 44 in {1.0})
+    If (feature 17 in {0.0})
+     Predict: 0.0
+    Else (feature 17 not in {0.0})
+     Predict: 1.0
+   Else (feature 44 not in {1.0})
+    If (feature 22 in {1.0})
+     Predict: 0.0
+    Else (feature 22 not in {1.0})
+     If (feature 23 in {1.0})
+      Predict: 0.0
+     Else (feature 23 not in {1.0})
+      Predict: 1.0
+}
